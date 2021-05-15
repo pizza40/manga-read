@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MangaRead</title>
+</head>
+<body>
+    <header>
+        <div class="container mx-auto px-5 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-3xl font-bold">MangaRead</a>
+                <ul class="hidden md:flex">
+                    <li class="md:mx-3">
+                        <a href="#" class="border-b-4 border-purple-500 hover:border-green-500 transition duration-200">Home</a>
+                    </li>
+                    <li class="md:mx-3">
+                        <a href="#" class="border-b-4 border-purple-500 hover:border-green-500 transition duration-200">Review</a>
+                    </li>
+                    <li class="md:mx-3">
+                        <a href="#" class="border-b-4 border-purple-500 hover:border-green-500 transition duration-200">About Us</a>
+                    </li>
+                </ul>
+                <ul class="md:flex">
+                    <!-- <li class="py-2 px-4 mx-3 text-lg">
+                        <a href="#" class="">Sign Up</a>
+                    </li> -->
+                    <li class="py-2 px-4 mx-3 text-lg border border-gray-100 bg-blue-500 rounded hover:bg-blue-600 text-white text-lg">
+                        <a href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-5 py-3 rounded-l-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-2 bg-gray-100 rounded-md">
+            <div class="bg-black-400 md:bg-gray-100 tracking-wide">
+                <h1 class="text-5xl md:text-7xl font-semibold">Read Manga Everywhere.</h1>
+                <p class="pt-3 font-semibold text-lg text-gray-500">Best latest manga update everyday waiting for you to read.</p>
+                <p class="font-semibold text-lg text-gray-500">With premium account, you can download the manga for offline reading.</p>
+                <div class="flex">
+                    <input type="text" placeholder="Search manga" class="my-4 px-3 py-4 w-full rounded-l-lg sm:w-3/6 border border-blue-400">
+                    <button class="bg-blue-300 rounded-r-lg my-4 px-3 py-4 hover:bg-blue-500 duration-200">Search</button>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-500">
+                        Already have an account ? 
+                        <a href="#" class="font-semibold text-red-600">Login</a>
+                    </p>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <img src="manga.jpg" alt="manga" class="rounded-r-lg">
+            </div>
+        </div>
+
+        <h1 class="font-semibold text-xl md:text-1xl lg:text-2xl pt-4">Latest Manga This Week &#128293;</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-3 p-6 gap-4 mx-auto">
+            <div class="grid grid-cols-2 gap-2 justify-center justify-items-center bg-gray-200 px-4 py-2 rounded-md">
+                <div>
+                    <h1 class="font-bold text-base lg:mt-12">Jojo's Bizarre Adventure</h1>
+                    <p class="font-semibold text-sm text-gray-500">Stardust Crusaders</p>
+                    <p class="font-semibold text-sm text-gray-500">chapter 14-15</p>
+                </div>
+                <div>
+                    <img src="jjba14.jpg" alt="jjba">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 justify-center justify-items-center bg-gray-200 px-4 py-2 rounded-md">
+                <div>
+                    <h1 class="font-bold text-base lg:mt-12">Jujutsu Kaisen</h1>
+                    <p class="font-semibold text-sm text-gray-500">Season 1</p>
+                    <p class="font-semibold text-sm text-gray-500">chapter 11</p>
+                </div>
+                <div>
+                    <img src="jujutsu.jpg" alt="jjba">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 justify-center justify-items-center bg-gray-200 px-4 py-2 rounded-md">
+                <div>
+                    <h1 class="font-bold text-base lg:mt-12">Demon Slayer : Kimetsu no Yaiba</h1>
+                    <p class="font-semibold text-sm text-gray-500">Season 1</p>
+                    <p class="font-semibold text-sm text-gray-500">chapter 8</p>
+                </div>
+                <div>
+                    <img src="kimetsu.jpg" alt="jjba">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
