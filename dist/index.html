@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .checked {
+             color: orange;
+        }
+    </style>
     <title>MangaRead</title>
 </head>
 <body>
@@ -14,20 +20,20 @@
                 <a href="#" class="text-3xl font-bold">MangaRead</a>
                 <ul class="hidden md:flex">
                     <li class="md:mx-3">
-                        <a href="#" class="border-b-4 border-purple-500 hover:border-green-500 transition duration-200">Home</a>
+                        <a href="#" class="border-b-2 border-blue-700 hover:border-blue-500 duration-300">Home</a>
                     </li>
                     <li class="md:mx-3">
-                        <a href="#" class="border-b-4 border-purple-500 hover:border-green-500 transition duration-200">Review</a>
+                        <a href="#" class="border-b-2 border-blue-700 hover:border-blue-500 duration-300">Review</a>
                     </li>
                     <li class="md:mx-3">
-                        <a href="#" class="border-b-4 border-purple-500 hover:border-green-500 transition duration-200">About Us</a>
+                        <a href="#" class="border-b-2 border-blue-700 hover:border-blue-500 duration-300">About Us</a>
                     </li>
                 </ul>
                 <ul class="md:flex">
                     <!-- <li class="py-2 px-4 mx-3 text-lg">
                         <a href="#" class="">Sign Up</a>
                     </li> -->
-                    <li class="py-2 px-4 mx-3 text-lg border border-gray-100 bg-blue-500 rounded hover:bg-blue-600 text-white text-lg">
+                    <li class="py-2 px-4 mx-3 text-lg border border-gray-100 bg-blue-700 rounded hover:bg-blue-600 duration-200 text-white text-lg">
                         <a href="#">Sign Up</a>
                     </li>
                 </ul>
@@ -38,56 +44,88 @@
     <div class="container mx-auto px-5 py-3 rounded-l-lg">
         <div class="grid grid-cols-1 lg:grid-cols-2 bg-gray-100 rounded-md">
             <div class="bg-black-400 md:bg-gray-100 tracking-wide">
-                <h1 class="text-5xl md:text-7xl font-semibold">Read Manga Everywhere.</h1>
-                <p class="pt-3 font-semibold text-lg text-gray-500">Best latest manga update everyday waiting for you to read.</p>
-                <p class="font-semibold text-lg text-gray-500">With premium account, you can download the manga for offline reading.</p>
+                <h1 class="text-5xl md:text-7xl font-semibold">
+                   <strong class="text-blue-700">Read</strong>  
+                    Manga 
+                   <strong class="text-blue-700">Everywhere.</strong>
+                </h1>
+                <p class="pt-3  text-lg md:text-2xl text-gray-500">Best latest manga update everyday waiting for you to read.</p>
+                <!-- <p class="font-semibold text-lg text-gray-500">With premium account, you can download the manga for offline reading.</p> -->
                 <div class="flex">
-                    <input type="text" placeholder="Search manga" class="my-4 px-3 py-4 w-full rounded-l-lg sm:w-3/6 border border-blue-400">
-                    <button class="bg-blue-300 rounded-r-lg my-4 px-3 py-4 hover:bg-blue-500 duration-200">Search</button>
+                    <input type="text" placeholder="Search manga" class="my-4 px-3 py-4 w-full rounded-l-lg sm:w-3/6 border border-blue-700">
+                    <button class="bg-blue-700 text-white rounded-r-lg my-4 px-3 py-4 hover:bg-blue-600 duration-200">Search</button>
                 </div>
                 <div>
-                    <p class="font-semibold text-gray-500">
+                    <p class="font-semibold text-lg md:text-base text-gray-500">
                         Already have an account ? 
-                        <a href="#" class="font-semibold text-red-600">Login</a>
+                        <a href="#" class="font-semibold text-blue-700">Login</a>
                     </p>
                 </div>
             </div>
-            <div class="hidden lg:block">
-                <img src="manga.jpg" alt="manga" class="rounded-r-lg">
-            </div>
+            <!-- <div class="lg:block"> -->
+                <img src="manga.jpg" alt="manga" class="rounded-r-lg order-first md:order-first lg:order-last">
+            <!-- </div> -->
         </div>
 
-        <h1 class="font-semibold text-xl md:text-1xl lg:text-2xl pt-4">Latest Manga This Week &#128293;</h1>
+        <h1 class="font-semibold text-xl md:text-2xl lg:text-2xl pt-4">Latest Manga This Week &#128293;</h1>
         <div class="grid grid-cols-1 lg:grid-cols-3 p-6 gap-4 mx-auto">
-            <div class="grid grid-cols-2 gap-2 justify-center justify-items-center bg-gray-200 px-4 py-2 rounded-md">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2 justify-center justify-items-center bg-gray-200 px-4 py-2 rounded-md">
                 <div>
-                    <h1 class="font-bold text-base lg:mt-12">Jojo's Bizarre Adventure</h1>
-                    <p class="font-semibold text-sm text-gray-500">Stardust Crusaders</p>
-                    <p class="font-semibold text-sm text-gray-500">chapter 14-15</p>
+                    <h1 class="font-bold text-base pl-3 lg:mt-12">Jojo's Bizarre Adventure</h1>
+                    <p class="font-semibold text-sm pl-3 text-gray-500">Stardust Crusaders</p>
+                    <p class="font-semibold text-sm pl-3 text-gray-500">chapter 14-15</p>
+                    <p class="font-semibold text-sm pl-3 text-gray-500 pt-2 lg:hidden">Synopsis</p>
+                    <p class="font-semibold text-sm pl-3 text-gray-500 lg:hidden">The story begins in 1988, centered on Jotaro Kujo, grandson of Joseph Joestar. 
+                        Jotaro has been arrested, and refuses to leave his cell, believing he is possessed by an evil spirit.</p>
+                    <div>
+                        <span class="pl-3 md:pt-12 lg:pt-12 fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
                 </div>
-                <div>
-                    <img src="jjba14.jpg" alt="jjba">
-                </div>
+                <!-- <div> -->
+                    <img src="jjba14.jpg" alt="jjba" class="order-first md:order-first lg:order-last">
+                <!-- </div> -->
             </div>
-            <div class="grid grid-cols-2 justify-center justify-items-center bg-gray-200 px-4 py-2 rounded-md">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-center justify-items-center bg-gray-200 px-4 py-2 rounded-md">
                 <div>
-                    <h1 class="font-bold text-base lg:mt-12">Jujutsu Kaisen</h1>
-                    <p class="font-semibold text-sm text-gray-500">Season 1</p>
-                    <p class="font-semibold text-sm text-gray-500">chapter 11</p>
+                    <h1 class="font-bold text-base pl-3 lg:mt-12">Jujutsu Kaisen : Itadori Yuuji Tale</h1>
+                    <p class="font-semibold text-sm pl-3 text-gray-500">Season 1</p>
+                    <p class="font-semibold text-sm pl-3 text-gray-500">chapter 11</p>
+                    <p class="font-semibold text-sm pl-3 text-gray-500 pt-2 lg:hidden">Synopsis</p>
+                    <p class="font-semibold text-sm pl-3 text-gray-500 lg:hidden">The story follows high school student Yuji Itadori as he joins 
+                        a secret organization of Jujutsu Sorcerers in order to kill a powerful Curse named Ryomen Sukuna, 
+                        of whom Yuji becomes the host</p>
+                        <div>
+                            <span class="pl-3 md:pt-12 lg:pt-12 fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
                 </div>
-                <div>
-                    <img src="jujutsu.jpg" alt="jjba">
-                </div>
+                    <img src="jujutsu.jpg" alt="jjba" class="order-first md:order-first lg:order-last">
             </div>
-            <div class="grid grid-cols-2 justify-center justify-items-center bg-gray-200 px-4 py-2 rounded-md">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-center justify-items-center bg-gray-200 px-4 py-2 rounded-md">
                 <div>
-                    <h1 class="font-bold text-base lg:mt-12">Demon Slayer : Kimetsu no Yaiba</h1>
-                    <p class="font-semibold text-sm text-gray-500">Season 1</p>
-                    <p class="font-semibold text-sm text-gray-500">chapter 8</p>
+                    <h1 class="font-bold text-base pl-3 lg:mt-12">Demon Slayer : Kimetsu no Yaiba</h1>
+                    <p class="font-semibold text-sm pl-3 text-gray-500">Season 1</p>
+                    <p class="font-semibold text-sm pl-3 text-gray-500">chapter 8</p>
+                    <p class="font-semibold text-sm pl-3 text-gray-500 pt-2 lg:hidden">Synopsis</p>
+                    <p class="font-semibold text-sm pl-3 text-gray-500 lg:hidden">Tanjiro Kamado and his sister Nezuko Kamado as they seek 
+                        a cure to Nezuko's demon curse. Tanjiro and Nezuko joins a secret society,the 
+                        Demon Slayer Corps, that have been waging war against demons.</p>
+                        <div>
+                            <span class="pl-3 md:pt-12 lg:pt-12 fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
                 </div>
-                <div>
-                    <img src="kimetsu.jpg" alt="jjba">
-                </div>
+                    <img src="kimetsu.jpg" alt="jjba" class="order-first md:order-first lg:order-last">
             </div>
         </div>
     </div>
